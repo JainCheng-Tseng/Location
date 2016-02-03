@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="緯度(Latitude):"/>
+        <EditText android:id="@+id/txtLat"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="22.639619"
+            android:inputType="numberDecimal"
+            android:background="#ffaba3a5"
+            android:textColor="#ff1b10dd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="經度(Longitude):"/>
+        <EditText android:id="@+id/txtLong"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="120.30211"
+            android:inputType="numberDecimal"
+            android:background="#ffaba3a5"
+            android:textColor="#ff180bd3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButton"
+            android:src="@drawable/one6"
+            android:onClick="button3_Click"/>
+
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:src="@drawable/one7"
+            android:id="@+id/imageButton2"
+            android:onClick="button1_Click"/>
+    </LinearLayout>
+
+    <Spinner android:id="@+id/addresslist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9d9b99" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="景點或地址:"/>
+        <EditText android:id="@+id/txtAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="71dp"
+            android:text="國立高雄海洋科技大學"
+            android:background="#9b8977a0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/one8"
+            android:onClick="button2_Click"/>
+        <ImageButton
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/one9"
+            android:onClick="button4_Click"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/output"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
